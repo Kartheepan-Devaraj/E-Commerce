@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+}
+#navbar {
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  gap: 50px;
+  padding-top: 50px;
+}
+#navbar::-webkit-scrollbar {
+  background-color: #000;
+}
+#nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  position: relative;
+  left: 30%;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+#search {
+  position: relative;
+  left: 170%;
+}
+
+#cart {
+  position: relative;
+  left: 150%;
+}
+
+#logo {
+  position: relative;
+  left: 190px;
+  top: -20%;
+}
+
+#four {
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 7%;
+  margin-left: 13%;
+}
+
+#card1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* #five {
+  display: flex;
+  gap: 5%;
+  margin-top: 10%;
+  margin-left: 11%;
+}*/
+
+#six {
+  text-align: center;
+  margin-top: 10%;
+  height: 320px;
+  width: 100%;
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+span {
+  font-size: 29px;
+}
+
+#btn-1 {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+}
+
+footer {
+  height: 480px;
+  background-color: #000;
+}
+
+#foot {
+  display: flex;
+  gap: 15px;
+  margin-top: 5%;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#foot-1 {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#foot-2 {
+  margin-top: 3%;
+  margin-left: 0%;
+}
+
+#foot-3 {
+  margin-top: 3%;
+  margin-left: 0%;
+}
+
+#foot-4 {
+  margin-top: 3%;
+  margin-left: 9%;
+}
+
+#input {
+  border: none;
+  background-color: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+#line {
+  margin-top: -15%;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+#support {
+  color: white;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#meet {
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#social {
+  color: white;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: small;
+}
+
+li {
+  list-style-type: none;
+}
+
+#help {
+  display: flex;
+}
+
+#two {
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  #search {
+    margin-left: -50%;
+  }
+
+  #two h1 {
+    margin-left: 0%;
+  }
+
+  #four {
+    display: grid;
+  }
+
+  #five {
+    display: grid;
+  }
+
+  #four {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 7%;
+    margin-left: 5.5%;
+  }
+
+  #card1 img {
+    width: 524px !important;
+    height: 524px !important;
+  }
+}
+
+@media (max-width: 776px) {
+  #card1 img {
+    width: 334px !important;
+    height: 334px !important;
+  }
+
+  #logo {
+    margin-left: -130px;
+  }
+
+  #nav-list {
+    margin-left: -10%;
+  }
+  #search {
+    margin-left: -100%;
+  }
+  #cart {
+    margin-left: -4%;
+  }
+
+  #foot-1 {
+    margin-left: 4%;
+    margin-top: 8%;
+  }
+
+  #foot-2 {
+    margin-top: 8%;
+    width: 20%;
+    margin-left: 9%;
+  }
+
+  #foot-3 {
+    margin-top: 8%;
+    width: 20%;
+  }
+
+  #foot-4 {
+    margin-top: 8%;
+    width: 50%;
+  }
+
+  #foot-4 p {
+    margin-left: -50%;
+  }
+
+  #foot-1 h1 {
+    font-size: 29px !important;
+  }
+
+  #help {
+    height: 230px;
+    background-color: #000;
+  }
+
+  #support {
+    margin-left: 5%;
+  }
+
+  #meet {
+    width: 50%;
+  }
+
+  #social {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 556px) {
+  #four {
+    display: grid;
+    grid-template-columns: 0fr;
+    margin-left: 20%;
+  }
+
+  #search {
+    margin-left: -130%;
+  }
+
+  #nav-list {
+    margin-left: -70px;
+  }
+
+  #logo {
+    margin-left: -150px;
+  }
+
+  #foot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #foot {
+    margin-top: 0%;
+  }
+
+  #foot-2 {
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  .line {
+    width: 400px;
+  }
+
+  #foot-3 {
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  #foot-4 {
+    margin-left: 50%;
+    margin-top: 3%;
+  }
+
+  #foot-1 h1 {
+    font-size: 20px !important;
+  }
+
+  #help {
+    height: 220px;
+    background-color: #000;
+  }
+
+  #support {
+    margin-left: 5%;
+  }
+
+  #meet {
+    width: 50%;
+  }
+
+  #social {
+    margin-left: -10%;
+  }
+}
