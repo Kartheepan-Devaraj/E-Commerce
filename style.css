@@ -2,22 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font);
 }
 
-body {
+:root {
+  --primay-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 0%);
+  --aliceblue: hsl(208, 100%, 97%);
+  --gray: hsl(208, 100%, 97%);
+  --font: "Open Sans", sans-serif;
 }
-#navbar {
+
+.navbar {
   display: flex;
   background-color: transparent;
   position: fixed;
   gap: 50px;
   padding-top: 50px;
 }
-#navbar::-webkit-scrollbar {
-  background-color: #000;
-}
-#nav-list {
+
+.nav-list {
   display: flex;
   list-style-type: none;
   gap: 20px;
@@ -25,22 +29,22 @@ body {
   left: 53%;
 }
 
-#nav-list a {
+.nav-list a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
 }
 
-#search {
+.search {
   position: relative;
   left: 120%;
 }
 
-#cart {
+.cart {
   position: relative;
   left: 100%;
 }
 
-#logo {
+.logo {
   position: relative;
   left: 300px;
   top: -20%;
@@ -48,19 +52,19 @@ body {
 
 #one {
   display: flex;
-  background-color: aliceblue;
+  background-color: var(--aliceblue);
   height: 100vh;
   margin: 0;
 }
 
-#h1 {
+.h1 {
   font-family: "Poppins", sans-serif;
   position: absolute;
   top: 30%;
   left: 17%;
 }
 
-#para {
+.para {
   font-family: "Poppins", sans-serif;
   font-size: medium;
   position: absolute;
@@ -68,8 +72,8 @@ body {
   left: 17%;
 }
 
-#btn {
-  border: 2px solid black;
+.btn {
+  border: 2px solid var(--secondary-color);
   border-radius: 20px;
   padding: 10px 30px;
   background-color: transparent;
@@ -79,11 +83,11 @@ body {
 }
 
 #btn:hover {
-  background-color: #000;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primay-color);
 }
 
-#tune {
+.tune {
   position: absolute;
   top: 23%;
   left: 50%;
@@ -108,47 +112,13 @@ body {
   margin-left: 10%;
 }
 
-/* #box1 {
-  height: 150px;
-  position: absolute;
+.box1,
+.box2,
+.box3 {
   text-align: center;
-  left: 43%;
 }
 
-#box2 {
-  height: 150px;
-  position: absolute;
-  text-align: center;
-  left: 59%;
-} */
-
-/* #box3 {
-  height: 150px;
-  position: absolute;
-  text-align: center;
-  left: 75%;
-} */
-
-/* #content {
-  position: absolute;
-  top: 143%;
-  left: 12%;
-} */
-
-#four {
-  display: grid;
-  grid-template-columns: 0fr 0fr 0fr;
-  column-gap: 80px;
-  row-gap: 40px;
-  margin-top: 7%;
-  margin-left: 9%;
-}
-
-#card1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-
+#four,
 #five {
   display: grid;
   grid-template-columns: 0fr 0fr 0fr;
@@ -156,6 +126,11 @@ body {
   row-gap: 40px;
   margin-top: 7%;
   margin-left: 9%;
+}
+
+.card1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 #six {
@@ -171,8 +146,8 @@ span {
   font-size: 29px;
 }
 
-#btn-1 {
-  border: 1px solid black;
+.btn-1 {
+  border: 1px solid var(--secondary-color);
   border-radius: 20px;
   padding: 10px 30px;
   background-color: transparent;
@@ -180,7 +155,7 @@ span {
 
 footer {
   height: 480px;
-  background-color: #000;
+  background-color: var(--secondary-color);
 }
 
 #foot {
@@ -189,31 +164,31 @@ footer {
   margin-top: 5%;
   height: 400px;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primay-color);
 }
 
-#foot-1 {
+.foot-1 {
   margin-top: 2%;
   margin-left: 10%;
 }
 
-#foot-2 {
+.foot-2 {
   margin-top: 3%;
   margin-left: 0%;
 }
 
-#foot-3 {
+.foot-3 {
   margin-top: 3%;
   margin-left: 0%;
 }
 
-#foot-4 {
+.foot-4 {
   margin-top: 3%;
   margin-left: 9%;
 }
 
-#input {
+.input {
   border: none;
   background-color: transparent;
 }
@@ -221,36 +196,36 @@ footer {
 .line {
   width: 100%;
   height: 1px;
-  background-color: white;
+  background-color: var(--primay-color);
 }
 
 #line {
   margin-top: -15%;
   width: 100%;
   height: 1px;
-  background-color: white;
+  background-color: var(--primay-color);
 }
 
-#support {
-  color: white;
+.support {
+  color: var(--primay-color);
   margin-left: 10%;
   margin-top: 5%;
 }
-#meet {
-  color: white;
-  margin-left: 5%;
-  margin-top: 5%;
+.meet {
+  color: var(--primay-color);
+  margin-left: 30%;
+  margin-top: -8.8%;
 }
 
-#social {
-  color: white;
-  margin-left: 40%;
-  margin-top: 5%;
+.social {
+  color: var(--primay-color);
+  margin-left: 80%;
+  margin-top: -8.8%;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: var(--gray);
   font-size: small;
 }
 
@@ -258,7 +233,7 @@ li {
   list-style-type: none;
 }
 
-#help {
+.help {
   display: flex;
 }
 
@@ -273,10 +248,18 @@ li {
     margin-left: 3%;
   }
 
-  #tune {
+  .tune {
     height: 300px;
     width: 500px;
     margin-left: 7%;
+  }
+
+  .meet {
+    margin-top: -11%;
+  }
+
+  .social {
+    margin-top: -11%;
   }
 }
 
@@ -292,80 +275,82 @@ li {
     column-gap: 10px;
   }
 
-  #card1 img {
+  .card1 img {
     width: 213px;
     height: 283px;
   }
 
-  #box1 img,
-  #box2 img,
-  #box3 img {
+  .box1 img,
+  .box2 img,
+  .box3 img {
     height: 132px;
     width: 132px;
   }
 
-  #tune {
+  .tune {
     height: 300px;
     width: 370px;
     margin-left: 0%;
     margin-top: 0%;
   }
 
-  #h1,
-  #para {
+  .h1,
+  .para {
     margin-left: -10%;
     font-size: 12px;
   }
 
-  #btn {
+  .btn {
     margin-top: -5%;
     margin-left: -10%;
   }
 
-  #foot-1 {
+  .foot-1 {
     margin-left: 4%;
     margin-top: 8%;
   }
 
-  #foot-2 {
+  .foot-2 {
     margin-top: 8%;
     width: 20%;
     margin-left: 9%;
   }
 
-  #foot-3 {
+  .foot-3 {
     margin-top: 8%;
     width: 20%;
   }
 
-  #foot-4 {
+  .foot-4 {
     margin-top: 8%;
     width: 50%;
   }
 
-  #foot-4 p {
+  .foot-4 p {
     margin-left: -50%;
   }
 
-  #foot-1 h1 {
+  .foot-1 h1 {
     font-size: 29px !important;
   }
 
-  #help {
+  .help {
     height: 220px;
     background-color: #000;
   }
 
-  #support {
+  .support {
     margin-left: 5%;
   }
 
-  #meet {
+  .meet {
     width: 50%;
+    margin-top: -17%;
   }
 
-  #social {
-    margin-left: 0%;
+  .social {
+    margin-left: 70%;
+    margin-top: -17%;
   }
 
   /* #card1 img {
@@ -373,17 +358,17 @@ li {
     height: 334px !important;
   } */
 
-  #logo {
+  .logo {
     margin-left: -250px;
   }
 
-  #nav-list {
+  .nav-list {
     margin-left: -42%;
   }
-  #search {
+  .search {
     margin-left: -20%;
   }
-  #cart {
+  .cart {
     margin-left: -4%;
   }
 }
@@ -401,8 +386,8 @@ li {
     padding-top: 10%;
   }
 
-  #content {
-    font-size: 16px;
+  .content {
+    font-size: 26px;
   }
   #three {
     display: grid;
@@ -416,19 +401,19 @@ li {
     margin-left: 5%;
     row-gap: 80px;
   }
-  #search {
+  .search {
     margin-left: -60%;
   }
 
-  #cart {
+  .cart {
     margin-left: 12%;
   }
 
-  #nav-list {
+  .nav-list {
     margin-left: -130px;
   }
 
-  #logo {
+  .logo {
     margin-left: -250px;
   }
 
@@ -441,27 +426,27 @@ li {
     margin-top: 0%;
   }
 
-  #foot-2 {
-    margin-left: 5%;
-    margin-top: 3%;
+  .foot-2 {
+    margin-left: 4%;
+    margin-top: 5%;
   }
 
   .line {
     width: 400px;
   }
 
-  #foot-3 {
-    margin-left: 5%;
-    margin-top: 3%;
+  .foot-3 {
+    margin-top: 0%;
+    margin-left: 4%;
   }
 
-  #foot-4 {
+  .foot-4 {
     margin-left: 50%;
-    margin-top: 3%;
+    margin-top: 4%;
   }
 
-  #foot-1 h1 {
-    font-size: 20px !important;
+  .foot-1 h1 {
+    font-size: 15px !important;
   }
 
   #help {
@@ -469,16 +454,19 @@ li {
     background-color: #000;
   }
 
-  #support {
+  .support {
     margin-left: 5%;
   }
 
-  #meet {
+  .meet {
     width: 50%;
+    margin-left: 30%;
+    margin-top: -23.8%;
   }
 
-  #social {
-    margin-left: -10%;
+  .social {
+    margin-left: 70%;
+    margin-top: -23.8%;
   }
 
   #two {
@@ -487,51 +475,51 @@ li {
     text-align: left;
   }
 
-  #tune {
+  .tune {
     height: 200px;
     width: 300px;
     margin-left: -30%;
     margin-top: 45%;
   }
 
-  #h1 {
+  .h1 {
     margin-left: -10%;
     font-size: 12px;
     margin-top: -5%;
   }
 
-  #para {
+  .para {
     margin-left: -10%;
     font-size: 12px;
     margin-top: -10%;
   }
 
-  #btn {
+  .btn {
     margin-top: -17%;
     margin-left: -10%;
   }
 
-  #card2 img {
+  .card2 img {
     width: 50px !important;
     height: 50px !important;
     margin-top: 10%;
   }
 
-  #card1 img {
+  .card1 img {
     width: 499px !important;
     height: 665px !important;
   }
 
-  #box1 img,
-  #box2 img,
-  #box3 img {
+  .box1 img,
+  .box2 img,
+  .box3 img {
     height: 499px;
     width: 499px;
   }
 
-  #box1,
-  #box2,
-  #box3 {
+  .box1,
+  .box2,
+  .box3 {
     text-align: center;
   }
 }

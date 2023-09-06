@@ -5,16 +5,25 @@
   font-family: "Open Sans", sans-serif;
 }
 
+:root {
+  --primay-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 0%);
+  --pink: hsl(350, 65%, 31%);
+  --gray: hsl(0, 0%, 84%);
+  --font: "Open Sans", sans-serif;
+}
+
 #one {
   width: 100%;
   height: 90px;
   position: fixed;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
-  background-color: white;
+  background-color: var(--primay-color);
+  color: var(--primay-color);
   z-index: 50;
 }
-#navbar {
+.navbar {
   display: flex;
   background-color: transparent;
   position: fixed;
@@ -22,10 +31,7 @@
   padding-top: 40px;
 }
 
-#navbar #scrolled {
-  background-color: #000;
-}
-#nav-list {
+.nav-list {
   display: flex;
   list-style-type: none;
   gap: 20px;
@@ -33,39 +39,38 @@
   left: 30%;
 }
 
-#nav-list a {
+.navl {
   text-decoration: none;
-  color: #000;
+  color: var(--secondary-color);
 }
 
-#search {
+.search {
   position: relative;
   left: 155%;
 }
 
-#cart {
+.cart {
   position: relative;
   left: 149%;
 }
 
-#logo {
+.logo {
   position: relative;
   left: 190px;
   top: -20%;
 }
-
-#two {
-  background-color: #ffdede;
+.two {
+  background-color: var(--pink);
   width: 100%;
   height: 80vh;
 }
 
-#image1 {
+.image1 {
   margin-top: 10%;
   margin-left: 13%;
 }
 
-#image2 {
+.image2 {
   margin-top: 11.4%;
   margin-left: 67%;
 }
@@ -111,7 +116,7 @@
 
 footer {
   height: 480px;
-  background-color: #000;
+  background-color: var(--secondary-color);
 }
 
 #foot {
@@ -120,31 +125,31 @@ footer {
   margin-top: 5%;
   height: 400px;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primay-color);
 }
 
-#foot-1 {
+.foot-1 {
   margin-top: 2%;
   margin-left: 10%;
 }
 
-#foot-2 {
+.foot-2 {
   margin-top: 3%;
   margin-left: 0%;
 }
 
-#foot-3 {
+.foot-3 {
   margin-top: 3%;
   margin-left: 0%;
 }
 
-#foot-4 {
+.foot-4 {
   margin-top: 3%;
   margin-left: 9%;
 }
 
-#input {
+.input {
   border: none;
   background-color: transparent;
 }
@@ -152,36 +157,36 @@ footer {
 .line {
   width: 100%;
   height: 1px;
-  background-color: white;
+  background-color: var(--primay-color);
 }
 
 #line {
   margin-top: -15%;
   width: 100%;
   height: 1px;
-  background-color: white;
+  background-color: var(--primay-color);
 }
 
-#support {
-  color: white;
+.support {
+  color: var(--primay-color);
   margin-left: 10%;
   margin-top: 5%;
 }
-#meet {
-  color: white;
+.meet {
+  color: var(--primay-color);
   margin-left: 5%;
   margin-top: 5%;
 }
 
-#social {
-  color: white;
+.social {
+  color: var(--primay-color);
   margin-left: 40%;
   margin-top: 5%;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: var(--gray);
   font-size: small;
 }
 
@@ -198,12 +203,12 @@ li {
     height: 75px;
   }
 
-  #navbar {
+  .navbar {
     margin-left: -13.5%;
     margin-top: -1%;
   }
 
-  #image1 {
+  .image1 {
     width: 432px;
     height: 586px;
     margin-top: 20%;
@@ -224,12 +229,12 @@ li {
     font-size: 11px !important;
   }
 
-  #image2 {
+  .image2 {
     margin-left: 66%;
     margin-top: 4.7%;
   }
 
-  #image2 img {
+  .image2 img {
     height: 427px !important;
     width: 340px !important;
   }
@@ -265,7 +270,7 @@ li {
     text-align: left;
   }
 
-  #foot-1 {
+  .foot-1 {
     margin-left: 4%;
   }
 }
@@ -276,21 +281,21 @@ li {
     width: 100%;
   }
 
-  #logo {
+  .logo {
     margin-left: 0px;
   }
 
-  #nav-list {
+  .nav-list {
     margin-left: 0%;
   }
-  #search {
+  .search {
     margin-left: -80%;
   }
-  #cart {
+  .cart {
     margin-left: 0%;
   }
 
-  #image1 {
+  .image1 {
     width: 273px;
     height: 370px;
     margin-top: 20.4%;
@@ -319,12 +324,12 @@ li {
     font-size: 13px !important;
   }
 
-  #image2 {
+  .image2 {
     margin-left: 70%;
     margin-top: 11%;
   }
 
-  #image2 img {
+  .image2 img {
     height: 264px !important;
     width: 212px !important;
   }
@@ -369,49 +374,49 @@ li {
     text-align: center;
   }
 
-  #foot-1 {
+  .foot-1 {
     margin-left: 4%;
     margin-top: 8%;
   }
 
-  #foot-2 {
+  .foot-2 {
     margin-top: 8%;
     width: 20%;
     margin-left: 9%;
   }
 
-  #foot-3 {
+  .foot-3 {
     margin-top: 8%;
     width: 20%;
   }
 
-  #foot-4 {
+  .foot-4 {
     margin-top: 8%;
     width: 50%;
   }
 
-  #foot-4 p {
+  .foot-4 p {
     margin-left: -50%;
   }
 
-  #foot-1 h1 {
+  .foot-1 h1 {
     font-size: 29px !important;
   }
 
   #help {
     height: 220px;
-    background-color: #000;
+    background-color: var(--secondary-color);
   }
 
-  #support {
+  .support {
     margin-left: 5%;
   }
 
-  #meet {
+  .meet {
     width: 50%;
   }
 
-  #social {
+  .social {
     margin-left: 0%;
   }
 }
@@ -423,12 +428,12 @@ li {
     margin-left: 0%;
   }
 
-  #navbar {
+  .navbar {
     margin-left: -13%;
     margin-top: -2%;
   }
 
-  #nav-list {
+  .nav-list {
     margin-left: -3%;
   }
 
@@ -437,15 +442,15 @@ li {
     height: 1200px;
   }
 
-  #search {
+  .search {
     margin-left: -120%;
   }
 
-  #logo {
+  .logo {
     margin-left: -80px;
   }
 
-  #image1 {
+  .image1 {
     width: 470px;
     height: 637px;
     margin-top: 28%;
@@ -472,12 +477,12 @@ li {
     font-size: 14px !important;
   }
 
-  #image2 {
+  .image2 {
     margin-left: 17%;
     margin-top: 70%;
   }
 
-  #image2 img {
+  .image2 img {
     height: 460px !important;
     width: 370px !important;
   }
@@ -538,7 +543,7 @@ li {
     margin-top: 0%;
   }
 
-  #foot-2 {
+  .foot-2 {
     margin-left: 5%;
     margin-top: 3%;
   }
@@ -547,34 +552,34 @@ li {
     width: 400px;
   }
 
-  #foot-3 {
+  .foot-3 {
     margin-left: 5%;
     margin-top: 3%;
   }
 
-  #foot-4 {
+  .foot-4 {
     margin-left: 50%;
     margin-top: 3%;
   }
 
-  #foot-1 h1 {
+  .foot-1 h1 {
     font-size: 20px !important;
   }
 
   #help {
     height: 220px;
-    background-color: #000;
+    background-color: var(--secondary-color);
   }
 
-  #support {
+  .support {
     margin-left: 5%;
   }
 
-  #meet {
+  .meet {
     width: 50%;
   }
 
-  #social {
+  .social {
     margin-left: -10%;
   }
 }
